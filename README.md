@@ -1,5 +1,7 @@
 # ecommerce
 
+# WORK IN PROGRESS
+
 ## Project setup
 ```
 npm install
