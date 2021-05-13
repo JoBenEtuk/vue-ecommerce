@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+#app {
+  font-family: cursive, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background: $light;
+  background-image: linear-gradient(to top, $primary 0%, $light 100%);
+  color: $soft-black;
+  min-height: 100vh;
+}

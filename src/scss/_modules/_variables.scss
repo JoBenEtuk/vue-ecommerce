@@ -1,0 +1,21 @@
+// variables
+$dark: #727955;
+$primary: #c5bfa3;
+$light: #f0f0e0;
+$white: #fff;
+$yellow: #f6c45f;
+$blue: #bad6d9;
+$black: #000000;
+$soft-black: #202020;
+
+//Responsive Variables
+$breakpoints: (
+  phone: 320px,
+  phone2x: 480px,
+  phone3x: 768px,
+  tablet: 912px,
+  tablet2x: 1024px,
+  desktop: 1200px,
+  desktop2x: 1440px,
+  desktop3x: 1680px,
+);

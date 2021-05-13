@@ -1,0 +1,33 @@
+button,
+a {
+  cursor: pointer;
+}
+.button {
+  letter-spacing: 0.08rem;
+  outline: none !important;
+  padding: 0.8rem 1.2rem;
+  color: $white;
+  background-color: $dark;
+  border-radius: 5px;
+  margin-right: 1.8rem;
+  width: 10rem;
+  text-decoration: none !important;
+  box-shadow: none;
+  border: 1px solid transparent;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  white-space: nowrap;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: $dark;
+    background-color: $white;
+    border: 1px solid $dark;
+    padding: 0.8rem 1.2rem;
+  }
+  &:hover i {
+    animation: shakeRight 800ms ease-out alternate;
+  }
+}
