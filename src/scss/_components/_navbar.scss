@@ -8,23 +8,28 @@
     color: $soft-black;
     text-decoration: none;
     font-size: 26px;
-
-    &:hover,
-    &.router-link-exact-active {
-      // text-decoration: underline;
+    &:hover {
+      color: $dark;
+    }
+    &.active {
+      color: $dark;
+      text-decoration: underline;
     }
   }
   .nav-left {
     width: 40vw;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     .logo {
       font-size: 40px;
       text-decoration: underline;
+      &:hover {
+        color: $soft-black;
+      }
     }
     span {
-      width: 35%;
+      width: 54%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -42,22 +47,27 @@
     span {
       position: relative;
       input[type="search"] {
-        background: none;
-        padding: 5px;
+        background-color: #f3f3f4;
+        padding: 4px;
         padding-left: 25px;
-        border: 1px solid $black;
         outline: none;
         border-radius: 20px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 4px RGB(114 121 85 / 10%);
+        &:hover,
+        &:focus-visible {
+          background: $white;
+        }
         &::placeholder {
-          color: $primary;
-          font-size: 16px;
+          color: rgba($soft-black, 0.8);
+          font-size: 14px;
         }
       }
       svg {
         width: 16px;
         position: absolute;
-        left: 7px;
-        top: 7px;
+        left: 8px;
+        top: 9px;
       }
     }
   }

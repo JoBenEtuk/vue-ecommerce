@@ -1,3 +1,11 @@
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+// @function rgb($args...) {
+//   @return r#{g}#{b }((#{($args)}));
+// }
+
 // variables
 $dark: #727955;
 $primary: #c5bfa3;

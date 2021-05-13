@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Man from '../views/Man.vue'
-import Woman from '../views/Woman.vue'
+import Male from '../views/Male.vue'
+import Female from '../views/Female.vue'
+import General from '../views/General.vue'
+import Cart from '../views/Cart.vue'
 
 const routes = [
   {
@@ -10,14 +12,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/man',
-    name: 'Man',
-    component: Man
+    path: '/male',
+    name: 'Male',
+    component: Male
   },
   {
-    path: '/woman',
-    name: 'Woman',
-    component: Woman
+    path: '/general',
+    name: 'General',
+    component: General
+  },
+  {
+    path: '/female',
+    name: 'Female',
+    component: Female
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: Cart
   }
 ]
 

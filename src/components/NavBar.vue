@@ -1,18 +1,18 @@
 <template>
   <div class="main-nav">
     <div class="nav-left">
-      <router-link
-        :class="{ active: $route.name === 'Home' }"
-        to="/"
-        class="logo"
-        >Shop.</router-link
-      >
+      <router-link to="/" class="logo">Shop.</router-link>
       <span>
-        <router-link :class="{ active: $route.name === 'Man' }" to="/man"
-          >Man</router-link
+        <router-link
+          :class="{ active: $route.name === 'General' }"
+          to="/general"
+          >General</router-link
         >
-        <router-link :class="{ active: $route.name === 'Woman' }" to="/woman"
-          >Woman</router-link
+        <router-link :class="{ active: $route.name === 'Male' }" to="/male"
+          >Male</router-link
+        >
+        <router-link :class="{ active: $route.name === 'Female' }" to="/female"
+          >Female</router-link
         >
       </span>
     </div>

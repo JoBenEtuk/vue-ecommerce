@@ -1,6 +1,16 @@
 .home {
   .home-left {
     width: 45%;
+    margin-top: 6rem;
+    h1 {
+      position: absolute;
+      left: 3%;
+      border-right: 4px solid black;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typewriter 3s steps(15) 1s 1 normal both,
+        blinkCursor 600ms steps(15) infinite normal;
+    }
   }
   .gradient-bg {
     height: 75vh;
@@ -50,31 +60,27 @@
       }
     }
   }
-}
-@keyframes typewriter {
-  from {
-    width: 0;
+  .home-general-route {
+    position: absolute;
+    left: 4%;
+    bottom: 16rem;
+    .shop-now {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      span {
+        font-size: 3rem;
+        color: $soft-black;
+      }
+      svg {
+        width: 3.5rem;
+        color: $soft-black;
+      }
+      &:hover {
+        svg {
+          animation: bounceDown 500ms alternate;
+        }
+      }
+    }
   }
-  to {
-    width: 540px;
-  }
-}
-
-@keyframes blinkCursor {
-  from {
-    border-right-color: black;
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-.bleh {
-  position: absolute;
-  left: 30px;
-  border-right: 4px solid black;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 4s steps(15) 1s 6 normal both,
-    blinkCursor 800ms steps(15) infinite normal;
 }
