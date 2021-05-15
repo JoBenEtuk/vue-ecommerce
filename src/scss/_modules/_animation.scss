@@ -96,6 +96,15 @@
   }
 }
 
+@keyframes slideRight {
+  from {
+    transform: translateX(2%);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+
 @keyframes bounceWithRotate {
   from {
     transform: rotate(90deg) translateX(0);

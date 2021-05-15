@@ -1,0 +1,21 @@
+.home-features {
+  background-color: $white;
+  padding: 4rem 0;
+  .row {
+    justify-content: space-between;
+    .features-container {
+      max-width: 400px;
+      border: 2px solid black;
+      padding: 30px 20px;
+      svg {
+        font-size: 2rem;
+      }
+      .features-title {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 16px 0;
+      }
+    }
+  }
+}

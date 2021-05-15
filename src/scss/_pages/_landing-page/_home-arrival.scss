@@ -1,0 +1,103 @@
+.home-arrival {
+  .home-arrival-text {
+    background: $white;
+    height: 20vh;
+    .container {
+      h1 {
+      }
+      p {
+        width: 60%;
+        margin: auto;
+      }
+    }
+  }
+  .home-arrival-images {
+    .container {
+      .row {
+        justify-content: space-between;
+        padding: 49px 0;
+        .home-arrival-image-box {
+          position: relative;
+          width: 280px;
+          height: 400px;
+          margin: 20px 0;
+          box-sizing: border-box;
+          overflow: hidden;
+          &:hover {
+            .imgBox {
+              clip-path: circle(80px at center 100px);
+              transition-delay: 0s;
+            }
+            .content {
+              h2 {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.5s;
+              }
+              span {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.7s;
+              }
+              a {
+                opacity: 1;
+                transform: translateY(0);
+                transition-delay: 0.9s;
+              }
+            }
+          }
+          .imgBox {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: $soft-black;
+            clip-path: circle(400px at center 100px);
+            transition-delay: 0.5s;
+            transition: 0.5s;
+            img {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 55%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            h2,
+            span,
+            a {
+              opacity: 0;
+              transform: translateY(20px);
+              transition-delay: 0.5s;
+            }
+            h2 {
+              margin: 0;
+              padding: 0;
+              font-size: 32px;
+            }
+            a {
+              text-decoration: none;
+              background: $soft-black;
+              color: $white;
+              padding: 5px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
